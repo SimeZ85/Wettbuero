@@ -40,6 +40,7 @@ fun menue (){
         }
         eingabeSpieler==5 -> {
             "DTM AUTORENNEN"
+
             simulation()
             menue()
         }
