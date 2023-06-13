@@ -19,6 +19,8 @@ var driverBike = mutableListOf<String>("Märchen Mohamet", "Porno Paul", "Dänge
 
 var ageList = mutableListOf(18..45)
 
+var angepissteFahrer = driverCar.shuffled()
+
 //TODO ----------Zeitschleifen----------
 
 fun time05(){
