@@ -22,12 +22,11 @@ fun menue (){
     when {
         eingabeSpieler==1 -> {
             "KUNDENPORTAL"
-            menue()
+            kundenportal()
         }
         eingabeSpieler==2 -> {
             "EIN/AUSZAHLEN"
             einAuszahlen()
-            menue()
         }
         eingabeSpieler==3 -> {
             "PFERDERENNEN"

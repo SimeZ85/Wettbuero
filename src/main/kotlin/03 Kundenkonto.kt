@@ -1,6 +1,5 @@
 
 
-
 fun kundenportal (){
     println("----------Kundenportal----------")
     time10()
@@ -15,7 +14,48 @@ fun kundenportal (){
     println("--5: ---24h Spielpause")
     time05()
     println("--6: ---Hauptmenü")
+    var kundenportalEingabe = readln().toInt()
+    when{
+        kundenportalEingabe==1 -> {
+//            TODO Kontaktdateneinsicht
+            kundenportal()
+        }
+        kundenportalEingabe==2 -> {
+//            TODO Kontaktdaten ändern
+            kundenportal()
+        }
+        kundenportalEingabe==3 -> {
+//            TODO Passwort ändern
+            kundenportal()
+        }
+        kundenportalEingabe==4 -> {
+            kontostand()
+            kundenportal()
+        }
+        kundenportalEingabe==5 -> {
+            println("Ab  und  zu ist es gut  ein Pause einzulegen.")
+            time05()
+            println("In 24 Stunden kannst du unsere Dienste erneut")
+            time05()
+            println("nutzen  und  eine  schöne  Zeit  auf  unserer")
+            time05()
+            println("Plattform haben.  Genieß  in der Zwischenzeit")
+            time05()
+            println("die  Zeit  mit  der  Familie  oder  Freunden.")
+            time05()
+            println("Bis bald")
+        }
+        kundenportalEingabe==6 -> {
+            menue()
+        }
+        kundenportalEingabe>=7 -> {
+            println("Fehlerhafte Eingabe.")
+            kundenportal()
+        }
+    }
+
 }
+
 
 fun kontostand (){
     println("-----------Kontostandabfrage------------")
