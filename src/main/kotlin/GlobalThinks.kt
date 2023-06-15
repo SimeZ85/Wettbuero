@@ -1,4 +1,9 @@
 
+//TODO ----------Globale Maps----------
+
+var kundendaten = mutableMapOf<String, String>("Mario Schindler" to "015226182842",
+                                                "Porno Paul" to "GinaWild123",
+                                                "Peter Pansky" to "Polsky")
 
 //TODO ----------Globale Listen----------
 //Fahrerliste Auto-Motorsport

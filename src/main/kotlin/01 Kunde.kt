@@ -41,6 +41,7 @@ fun einzahlen (){
     println("1: Bestätigen")
     println("2: Abbrechen")
     var einzahlenEingabe = readln().toInt()
+    if (einzahlenEingabe<=bankkontoGuthaben){
     when{
         einzahlenEingabe==1 -> {
             bankkontoGuthaben = bankkontoGuthaben-einzahlenBank
@@ -61,7 +62,14 @@ fun einzahlen (){
             einzahlen()
         }
     }
-
+    } else {
+        println("Du hast nicht genügend Guthaben auf deinem Bankkonto.")
+        time05()
+        println("Wähle einen geringeren Betrag oder nimm Kontakt mit")
+        time05()
+        println("Bankaccountmanager auf.")
+        einAuszahlen()
+    }
 
 }
 
@@ -75,6 +83,8 @@ fun auszahlen (){
     println("1: Bestätigen")
     println("2: Abbrechen")
     var auszahlenEingabe = readln().toInt()
+
+    if (auszahlenEingabe <= kontostandAccount){
     when{
         auszahlenEingabe==1 -> {
             kontostandAccount = kontostandAccount-auszahlenBank
@@ -94,7 +104,16 @@ fun auszahlen (){
             auszahlen()
         }
     }
-
+    } else {
+        println("Du hast nicht genügend Geld auf deinem Spielerkonto.")
+        time05()
+        println("Dein Kontostand beträgt: $kontostandAccount€.")
+        time05()
+        println("Bitte wähle einen anderen Betrag oder zahle ein,")
+        time05()
+        println("falls dein Guthaben nicht ausreicht.")
+        einAuszahlen()
+    }
 
 }
 

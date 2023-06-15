@@ -18,6 +18,7 @@ fun kundenportal (){
     when{
         kundenportalEingabe==1 -> {
 //            TODO Kontaktdateneinsicht
+            kontaktdaten()
             kundenportal()
         }
         kundenportalEingabe==2 -> {
@@ -62,4 +63,14 @@ fun kontostand (){
     println("---Dein aktueller Kontostand beträgt:---")
     println("----------------$kontostandAccount------------------")
     println("----------------------------------------")
+}
+
+fun kontaktdaten (){
+    println("---------Kontaktdaten----------")
+    println("")
+//    TODO if logIn dann die und die Kontaktdaten ausgeben
+
+
+
+    readln()
 }

@@ -122,6 +122,7 @@ class DTMAutorennnen (){
                 var fahrerEingabe = readln().toInt()
                 println("Bitte mache nun deinen Einsatz:")
                 var einsatzDTM = readln().toDouble()
+                if(einsatzDTM<=kontostandAccount){
                 kontostandAccount=kontostandAccount-einsatzDTM
                 println("Du hast $einsatzDTM€ gesetzt.")
                 println("Kann das Rennen starten? Bestätige mit Enter.")
@@ -187,7 +188,14 @@ class DTMAutorennnen (){
                     wetteUndRennen()
                     }
                 }
-
+            } else {
+                println("Dein Guthaben ist nicht ausreichend.")
+                    time05()
+                    println("Bitte setzte weniger oder lade dein Kundenkonto")
+                    time05()
+                    println("über das Hauptmenü im Punkt Ein/Auszahlen auf.")
+                    wetteUndRennen()
+                }
             }
             wetZusEingabe==2 -> {
                 simulation()
