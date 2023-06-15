@@ -45,6 +45,9 @@ fun kundenportal (){
             println("die  Zeit  mit  der  Familie  oder  Freunden.")
             time05()
             println("Bis bald")
+            angemeldet = false
+            logIn()
+            time15()
         }
         kundenportalEingabe==6 -> {
             menue()

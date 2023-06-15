@@ -52,6 +52,9 @@ fun menue (){
                 Wir hoffen Sie hatten Spaß und freuen uns
                 über einen erneuten Besuch.
             """.trimIndent())
+            angemeldet = false
+            logIn()
+            time15()
         }
         eingabeSpieler>=7 -> {
             println("-----FEHLERHAFTE EINGABE-----")
