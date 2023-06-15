@@ -5,10 +5,16 @@ var kundendaten = mutableMapOf<String, String>("Mario Schindler" to "01522618284
                                                 "Porno Paul" to "GinaWild123",
                                                 "Peter Pansky" to "Polsky")
 
+var person1 = Nutzer("Mario Schindler", 25, "Rendsburger Straße 32, 25782 Tellingstedt", "01522/6182842")
+var person2 = Nutzer("Porno Paul", 38, "Kumschot Straße 33, 10405 Berlin", "04821/43151345")
+var person3 = Nutzer("Peter Pansky", 48, "Bresslauer Alleski 22, 4345 Warschau", "02346/52635")
+
+var kundendatenTest = mutableMapOf(person1 to "015226182842", person2 to "GinaWild123", person3 to "Polsky")
+
 //TODO ----------Globale Listen----------
 //Fahrerliste Auto-Motorsport
 
-var driverCar = mutableListOf<String>("Mario Schindler", "Enes Kasap", "Eduard Lukanskyy",
+var driverCar = mutableListOf<String>("Mario Schindler", "Enes Kasap", "Eduard Lukatskyy",
                                       "Peter Pan", "Bratwurst Bernhard", "Hubertus Humbuck",
                                       "Barnabas Basilius", "Steckzapfen Steffan", "Holz Harald",
                                       "Thomas Müller", "Mett Machmut", "Wurstfach Werner")

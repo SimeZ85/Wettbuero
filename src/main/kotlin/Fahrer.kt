@@ -1,6 +1,6 @@
 
 
-class Fahrer(var name: String, var alter: Int) {
+open class Fahrer(var name: String, var alter: Int) {
 
 
     override fun toString(): String {
