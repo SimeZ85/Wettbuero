@@ -17,7 +17,8 @@ var driverBike = mutableListOf<String>("Märchen Mohamet", "Porno Paul", "Dänge
                                        "Dagobert Duck", "Tick Trick und Track", "Donald Duck",
                                         "Die Panzerknacker", "Daisy Duck")
 
-var ageList = mutableListOf(18..45)
+
+
 
 var angepissteFahrer = driverCar.shuffled()
 
@@ -44,3 +45,8 @@ fun time20(){
 var simListDriver = mutableListOf(1, 2, 3, 4, 5)
 
 var m01 = simListDriver.random()
+
+//TODO ----------Kundenspezifisch----------
+
+var bankkontoGuthaben = 5000.0
+var kontostandAccount = 500.0

@@ -26,22 +26,23 @@ fun menue (){
         }
         eingabeSpieler==2 -> {
             "EIN/AUSZAHLEN"
+            einAuszahlen()
             menue()
         }
         eingabeSpieler==3 -> {
             "PFERDERENNEN"
-            simulation()
+            //simulation()
             menue()
         }
         eingabeSpieler==4 -> {
             "MOTORRADRENNEN"
-            simulation()
+            //simulation()
             menue()
         }
         eingabeSpieler==5 -> {
             "DTM AUTORENNEN"
 
-            simulation()
+            DTMAutorennnen().miniMenue()
             menue()
         }
         eingabeSpieler==6 -> {

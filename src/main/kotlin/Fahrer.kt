@@ -1,8 +1,10 @@
 
 
-class Fahrer(name: String, alter: IntRange) {
+class Fahrer(var name: String, var alter: Int) {
 
-    var name: String = ""
-    var alter: Int = 0
+
+    override fun toString(): String {
+        return "$name, $alter"
+    }
 
 }
