@@ -35,7 +35,7 @@ fun menue (){
         }
         eingabeSpieler==4 -> {
             "MOTORRADRENNEN"
-            //simulation()
+            Motorradrennen().miniMenueMotorradrennen()
             menue()
         }
         eingabeSpieler==5 -> {
