@@ -14,7 +14,7 @@ var kundendatenListeMehr = mutableListOf(person1, person2, person3)
 
 
 //TODO ----------Globale Listen----------
-//Fahrerliste Auto-Motorsport
+
 
 var driverCar = mutableListOf<String>("Mario Schindler", "Enes Kasap", "Eduard Lukatskyy",
                                       "Peter Pan", "Bratwurst Bernhard", "Hubertus Humbuck",
@@ -29,9 +29,6 @@ var driverBike = mutableListOf<String>("Märchen Mohamet", "Porno Paul", "Dänge
                                        "Gustaf Ganz", "Mila Superstar", "Sailor Moon",
                                        "Dagobert Duck", "Tick Trick und Track", "Donald Duck",
                                         "Die Panzerknacker", "Daisy Duck")
-
-
-
 
 var angepissteFahrer = driverCar.shuffled()
 
