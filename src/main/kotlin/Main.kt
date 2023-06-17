@@ -1,11 +1,7 @@
 
 
 
-
-
 fun main() {
-
-
-
-
+    logIn()
+    menue()
 }

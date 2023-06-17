@@ -6,8 +6,6 @@ var angemeldet = false
 
 fun logIn (){
 
-
-
     println("----------------------------------")
     println("----------Wet dich Fett-----------")
     println("----------------------------------")

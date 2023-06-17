@@ -80,7 +80,8 @@ fun kontaktdaten (){
     if(angemeldet){
         println("""
             Name: ${kundendaten.keys.indexOf(benutzername)}
-            Adresse: 
+            Adresse: ${person1.name}
+            
         """.trimIndent())
 
     }
