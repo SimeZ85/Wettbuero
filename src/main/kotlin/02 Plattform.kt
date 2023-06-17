@@ -30,7 +30,7 @@ fun menue (){
         }
         eingabeSpieler==3 -> {
             "PFERDERENNEN"
-            //simulation()
+            Pferderennen().miniMenuePferderennen()
             menue()
         }
         eingabeSpieler==4 -> {

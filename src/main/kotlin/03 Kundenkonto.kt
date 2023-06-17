@@ -79,8 +79,8 @@ fun kontaktdaten (){
     angemeldet = benutzername in kundendaten && passwort == kundendaten[benutzername]!!
     if(angemeldet){
         println("""
-            Name: ${kundendaten.keys}
-            Adresse: ${Nutzer().adresse1()}
+            Name: ${kundendaten.keys.indexOf(benutzername)}
+            Adresse: 
         """.trimIndent())
 
     }
