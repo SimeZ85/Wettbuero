@@ -75,20 +75,37 @@ fun kontaktdaten (){
     var angemeldet = false
     var benutzername: String = ""
     var passwort: String = ""
+    var logIn = logIn().toString()
+    println("Bitte Log dich erneut ein, um deine Kundendaten zu sehen.")
+    time05()
+    println("Benutzername:")
+    var benutzerNameKundendaten = readln()
+    println("Passwort:")
+    var passwortKundendaten = readln()
+    angemeldet = benutzerNameKundendaten in kundendaten && passwort == kundendaten[benutzerNameKundendaten]!!
+    if (angemeldet) {
+        println("Vielen Dank. Dein Benutzername ist: $benutzerNameKundendaten")
+        println("Dein aktuelles Passwort ist: ${kundendaten[benutzerNameKundendaten]}")
+        println("Dein angegebenes Alter ist: ${Nutzer().alter1(test[0])}")
 
-    angemeldet = benutzername in kundendaten && passwort == kundendaten[benutzername]!!
-    if(angemeldet){
-        println("""
-            Name: ${kundendaten.keys.indexOf(benutzername)}
-            Adresse: ${person1.name}
-            
-        """.trimIndent())
+    } else {
+        println("Einloggen fehlgeschlagen. Bitte versuch es erneut.")
+        logIn()
 
     }
+
+//    if(logIn in kundendaten.keys.toString()){
+//
+//    }
+//    angemeldet = benutzername in kundendaten && passwort == kundendaten[benutzername]!!
+//    if(angemeldet){
+//        println("""
+//            Name: ${kundendaten.keys.indexOf(benutzername)}
+//            Adresse: ${person1.name}
+//
+//        """.trimIndent())
+//
+//    }
 //    TODO if logIn dann die und die Kontaktdaten ausgeben
-
-
-
-
     readln()
 }

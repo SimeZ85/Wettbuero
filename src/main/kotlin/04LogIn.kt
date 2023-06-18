@@ -4,7 +4,7 @@
 
 var angemeldet = false
 
-fun logIn (){
+fun logIn ():String{
 
     println("----------------------------------")
     println("----------Wet dich Fett-----------")
@@ -21,8 +21,10 @@ fun logIn (){
     angemeldet = benutzerName in kundendaten && passwort == kundendaten[benutzerName]!!
     if (angemeldet) {
         println("Herzlich Willkommen $benutzerName")
+        return benutzerName
     } else {
         println("Einloggen fehlgeschlagen. Bitte versuch es erneut.")
         logIn()
+        return ""
     }
 }
