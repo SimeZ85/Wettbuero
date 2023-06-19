@@ -15,7 +15,9 @@ fun menue (){
     time05()
     println("--- 5: --DTM Automotorsport--")
     time05()
-    println("--- 6: ------Ausloggen-------")
+    println("--- 6: -------Roulette-------")
+    time05()
+    println("--- 7: ------Ausloggen-------")
 
     var eingabeSpieler = readln().toInt()
 
@@ -45,6 +47,9 @@ fun menue (){
             menue()
         }
         eingabeSpieler==6 -> {
+            "Roulette"
+        }
+        eingabeSpieler==7 -> {
             "AUSLOGGEN"
             println("""
                 Auf Wiedersehen. Schön, dass Sie hier waren
@@ -56,7 +61,7 @@ fun menue (){
             oberding()
             time15()
         }
-        eingabeSpieler>=7 -> {
+        eingabeSpieler>=8 -> {
             println("-----FEHLERHAFTE EINGABE-----")
             menue()
         }

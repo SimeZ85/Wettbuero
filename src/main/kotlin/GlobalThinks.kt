@@ -1,6 +1,17 @@
 
 //TODO ----------Globale Maps----------
 
+var roulette = mutableMapOf(0 to "Grün", 1 to "Rot", 2 to "Schwarz", 3 to "Rot",
+                            4 to "Schwarz", 5 to "Rot", 6 to "Schwarz", 7 to "Rot",
+                            8 to "Schwarz", 9 to "Rot", 10 to "Schwarz", 11 to "Schwarz",
+                            12 to "Rot", 13 to "Schwarz", 14 to "Rot", 15 to "Schwarz",
+                            16 to "Rot", 17 to "Schwarz", 18 to "Rot", 19 to "Rot",
+                            20 to "Schwarz", 21 to "Rot", 22 to "Schwarz", 23 to "Rot",
+                            24 to "Schwarz", 25 to "Rot", 26 to "Schwarz", 27 to "Rot",
+                            28 to "Schwarz", 29 to "Schwarz", 30 to "Rot", 31 to "Schwarz",
+                            32 to "Rot", 33 to "Schwarz", 34 to "Rot", 35 to "Schwarz",
+                            36 to "Rot")
+
 var kundendaten = mutableMapOf<String, String>("Mario Schindler" to "015226182842",
                                                 "Porno Paul" to "GinaWild123",
                                                 "Peter Pansky" to "Polsky")
