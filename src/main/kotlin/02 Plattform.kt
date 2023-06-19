@@ -48,6 +48,7 @@ fun menue (){
         }
         eingabeSpieler==6 -> {
             "Roulette"
+            Roulette().rouletteMenue()
         }
         eingabeSpieler==7 -> {
             "AUSLOGGEN"
