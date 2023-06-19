@@ -3,7 +3,6 @@
 
 fun main(){
 
-    logIn()
-    menue()
+
 
 }

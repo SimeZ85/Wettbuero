@@ -53,7 +53,7 @@ fun menue (){
                 über einen erneuten Besuch.
             """.trimIndent())
             angemeldet = false
-            logIn()
+            oberding()
             time15()
         }
         eingabeSpieler>=7 -> {
@@ -61,4 +61,8 @@ fun menue (){
             menue()
         }
     }
+}
+fun oberding (){
+    logIn()
+    menue()
 }

@@ -134,6 +134,7 @@ class Motorradrennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzMotorradrennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -144,6 +145,7 @@ class Motorradrennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzMotorradrennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -154,6 +156,7 @@ class Motorradrennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzMotorradrennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -164,6 +167,7 @@ class Motorradrennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzMotorradrennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -174,6 +178,7 @@ class Motorradrennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzMotorradrennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
