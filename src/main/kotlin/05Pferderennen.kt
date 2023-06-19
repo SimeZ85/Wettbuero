@@ -106,7 +106,7 @@ class Pferderennen {
         var wetZusEingabe = readln().toInt()
         when{
             wetZusEingabe==1 -> {
-                println("Wähle einen Fahrer auf den du deine")
+                println("Wähle einen Reiter auf den du deine")
                 time05()
                 println("Wette platzieren möchtest:")
                 time05()
@@ -134,6 +134,7 @@ class Pferderennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzPferderennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -144,6 +145,7 @@ class Pferderennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzPferderennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -154,6 +156,7 @@ class Pferderennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzPferderennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -164,6 +167,7 @@ class Pferderennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzPferderennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -174,6 +178,7 @@ class Pferderennen {
                             println("Herzlichen Glückwunsch. Sie haben gewonnen.")
                             var gew1 = einsatzPferderennen*5
                             var gesamtGew = kontostandAccount+gew1
+                            kontostandAccount=gesamtGew
                             time05()
                             println("Dein Gewinn beträgt: $gew1€")
                             time05()
@@ -213,11 +218,11 @@ class Pferderennen {
 
     fun miniMenuePferderennen (){
 
-        println("----------DTM Automotorsport----------")
+        println("-----------Pferderennen-----------")
         time05()
         println("--1: ----Wetten und zum Rennen----")
         time05()
-        println("--2: --------Fahreransicht--------")
+        println("--2: --------Reiteransicht--------")
         time05()
         println("--3: --------Zum Hauptmenü--------")
 

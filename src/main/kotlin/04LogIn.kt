@@ -2,7 +2,7 @@
 
 //TODO LogIn entwickeln
 
-var angemeldet = false
+var angemeldet = false //Gilt für alle Benutzer auf diesem Gerät. Daher auch Global
 
 fun logIn ():String{
 
