@@ -18,7 +18,7 @@ fun kundenportal (){
     when{
         kundenportalEingabe==1 -> {
 //            TODO Kontaktdateneinsicht
-            kontaktdaten()
+            kundendaten()
             kundenportal()
         }
         kundenportalEingabe==2 -> {
@@ -68,9 +68,9 @@ fun kontostand (){
     println("----------------------------------------")
 }
 
-fun kontaktdaten (){
+fun kundendaten (){
     println("-------------------------------")
-    println("---------Kontaktdaten----------")
+    println("---------Deine Daten-----------")
     println("-------------------------------")
     var angemeldet = false
     var benutzername: String = ""
@@ -84,14 +84,16 @@ fun kontaktdaten (){
     var passwortKundendaten = readln()
     angemeldet = benutzerNameKundendaten in kundendaten && passwort == kundendaten[benutzerNameKundendaten]!!
     if (angemeldet) {
-        println("Vielen Dank. Dein Benutzername ist: $benutzerNameKundendaten")
-        println("Dein aktuelles Passwort ist: ${kundendaten[benutzerNameKundendaten]}")
-        println("Dein angegebenes Alter ist: ${Nutzer().alter1(test[0])}")
+        println("Vielen Dank $benutzerNameKundendaten.")
+        println("E-Mail: ${emailKunde[benutzerNameKundendaten]}")
+//        println("Dein aktuelles Passwort ist: ${kundendaten[benutzerNameKundendaten]}")
+        println("Alter: ${alterKunden[benutzerNameKundendaten]}")
+        println("Adresse: ${adresseKunde[benutzerNameKundendaten]}")
+        println("Telefonnummer: ${telefonKunde[benutzerNameKundendaten]}")
 
     } else {
         println("Einloggen fehlgeschlagen. Bitte versuch es erneut.")
         logIn()
-
     }
 
 //    if(logIn in kundendaten.keys.toString()){

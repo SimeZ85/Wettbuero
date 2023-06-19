@@ -4,6 +4,16 @@
 var kundendaten = mutableMapOf<String, String>("Mario Schindler" to "015226182842",
                                                 "Porno Paul" to "GinaWild123",
                                                 "Peter Pansky" to "Polsky")
+var alterKunden = mutableMapOf("Mario Schindler" to 37, "Porno Paul" to 25, "Peter Pansky" to 28)
+var adresseKunde = mutableMapOf("Mario Schindler" to "Rendsburger Straße 32, 25782 Tellingstedt",
+                                "Porno Paul" to "Süderholmer Straße 78, 25782 Heide",
+                                "Peter Pansky" to "Ella-Kay-Straße 14, 10405 Berlin")
+var telefonKunde = mutableMapOf("Mario Schindler" to "015226182842",
+                                "Porno Paul" to "0483278878822",
+                                "Peter Pansky" to "0900666666")
+var emailKunde = mutableMapOf("Mario Schindler" to "dj.simez3@googlemail.com",
+                                "Porno Paul" to "pornopaul25@pHub24.de",
+                                "Peter Pansky" to "p.pansky123@nimmerlandsky.nim")
 
 var person1 = Person("Mario Schindler", 25, "Rendsburger Straße 32, 25782 Tellingstedt", "01522/6182842")
 var person2 = Person("Porno Paul", 38, "Kumschot Straße 33, 10405 Berlin", "04821/43151345")
