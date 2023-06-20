@@ -56,6 +56,20 @@ class Roulette {
                 time05()
                 println("--2: ---Schwarz")
                 var schwarzRot = readln().toInt()
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
                 if((schwarzRot==1)&&(roulette[rouletteRadZahl]!! == "Rot")){
                     var winAusRot = einsatzAusRot * 2
                     kontostandAccount = kontostandAccount+winAusRot
