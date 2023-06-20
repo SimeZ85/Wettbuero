@@ -42,6 +42,71 @@ class Roulette {
                 1-18 Gerade       Rot Schwarz  Ungerade 19-36
             
         """.trimIndent())
+        time05()
+        println("Triff deine Auswahl:")
+        var vorauswahl = readln().toInt()
+        when{
+            vorauswahl==1 -> {
+                "EINE FARBE"
+                println("Wähle deinen Einsatz:")
+                var einsatzAusRot = readln().toDouble()
+                println("Wähle eine Farbe")
+                time05()
+                println("--1: ---Rot")
+                time05()
+                println("--2: ---Schwarz")
+                var schwarzRot = readln().toInt()
+                if((schwarzRot==1)&&(roulette[rouletteRadZahl]!! == "Rot")){
+                    var winAusRot = einsatzAusRot * 2
+                    kontostandAccount = kontostandAccount+winAusRot
+                    println("Herzlichen Glückwunsch. Du hast gewonnen.")
+                    time05()
+                    println("Dein Gewinn beträgt: $winAusRot€")
+                    time05()
+                    println("Dein aktuelles Guthaben beträgt: $kontostandAccount€")
+                } else if ((schwarzRot==2)&&(roulette[rouletteRadZahl]!! == "Schwarz")) {
+                    var winAusSchwarz = einsatzAusRot * 2
+                    kontostandAccount = kontostandAccount + winAusSchwarz
+                    println("Herzlichen Glückwunsch. Du hast gewonnen.")
+                    time05()
+                    println("Dein Gewinn beträgt: $winAusSchwarz€")
+                    time05()
+                    println("Dein aktuelles Guthaben beträgt: $kontostandAccount€")
+                } else {
+                    kontostandAccount = kontostandAccount - einsatzAusRot
+                    println("Du hast leider verloren. Vielleicht beim nächsten mal.")
+                    time05()
+                    println("Dein aktueller Kontostand beträgt: $kontostandAccount")
+                }
+            }
+            vorauswahl==2 -> {
+                "EINE ZAHL"
+            }
+            vorauswahl==3 -> {
+                "ZWEI ZAHLEN"
+            }
+            vorauswahl==4 -> {
+                "DREI ZAHLEN"
+            }
+            vorauswahl==5 -> {
+                "VIER ZAHLEN"
+            }
+            vorauswahl==6 -> {
+                "1-18"
+            }
+            vorauswahl==7 -> {
+                "19-36"
+            }
+            vorauswahl==8 -> {
+                "GERADE"
+            }
+            vorauswahl==9 -> {
+                "UNGERADE"
+            }
+            vorauswahl==10 -> {
+                "NIEDRIGER HÖHER"
+            }
+        }
     }
     fun zwischenMenueSpiel(){
 
