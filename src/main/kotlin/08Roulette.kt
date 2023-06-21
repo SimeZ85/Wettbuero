@@ -192,6 +192,21 @@ class Roulette {
                 """.trimIndent())
                 var dreierReihe = readln().toInt()
                 var dreierGewinn = dreierEinsatz * 11
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
                 if (rouletteRadZahl in (1..3)&&(dreierReihe==1)){
                     kontostandAccount = kontostandAccount + dreierGewinn
                     println("Herzlichen Glückwunsch sie haben gewonnen.")
