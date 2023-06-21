@@ -32,13 +32,13 @@ class Roulette {
             7:  19 - 36 ---------- Alle Zahlen von 19 bis 36 (--x2--)
             8:  Gerade ----------- Alle geraden Zahlen (--x2--)
             9:  Ungerade --------- Alle ungeraden Zahlen (--x2--)
-            10: Niedriger/Höher -- Höher oder niedrigere Zahlen (--x2--)
+            10: Column ----------- Drei Reihen  (--x4--)
             11: Zurück zum Menü
             
             
-                3   6   9  12  15  18  21  24  27  30  33  36
-            0   2   5   8  11  14  17  20  23  26  29  32  35
-                1   4   7  10  13  16  19  22  25  28  31  34
+                3   6   9  12  15  18  21  24  27  30  33  36   <- Column 3
+            0   2   5   8  11  14  17  20  23  26  29  32  35   <- Column 2
+                1   4   7  10  13  16  19  22  25  28  31  34   <- Column 1
                 
                 1-18 Gerade       Rot Schwarz  Ungerade 19-36
             
@@ -153,19 +153,51 @@ class Roulette {
             }
             vorauswahl==3 -> {
                 "ZWEI ZAHLEN"
+//                Paare: 1-2, 1-4, 2-3, 2-5, 3-6, 4-5, 4-7, 5-6, 5-8, 6-9,
+            //                7-8, 7-10, 8-9, 8-11, 9-12, 10-11, 10-13, 11-12,
+          //      11-14, 12-15, 13-14, 13-16, 17-18, 17-20, 18-21, Das ist die hälfte
+                //der Kombinationen aus 2er Kombinationen
+                println("""
+                    Paare: 1-2, 1-4, 2-3, 2-5, 3-6, 4-5, 4-7, 5-6, 5-8, 6-9,
+                    7-8, 7-10, 8-9, 8-11, 9-12, 10-11, 10-13, 11-12,
+                    11-14, 12-15, 13-14, 13-16, 17-18, 17-20, 18-21, 
+                    Das ist die hälfte der Kombinationen aus 2er Kombinationen.
+                    Möglich das zu programmieren allerdings sprengt das den 
+                    Rahmen für die Zeit, die ich zur Verfügung habe
+                """.trimIndent())
+                time05()
+                println("Weiter mit Enter")
+                readln()
+                spiel()
             }
             vorauswahl==4 -> {
                 "DREI ZAHLEN"
+                println("""
+                    12 Kombinationen = 13 if else Anweisungen. Das sprengt
+                    den Rahmen des zeitlich Machbaren. Gern bei mehr Zeit.
+                """.trimIndent())
+                time05()
+                println("Weiter mit Enter")
+                readln()
+                spiel()
             }
             vorauswahl==5 -> {
                 "VIER ZAHLEN"
+                println("""
+                    22 Kombinationen = 23 if else Anweisungen. Auch das sprengt
+                    den Rahmen des zeitlich Machbaren. Gern bei mehr Zeit.
+                """.trimIndent())
+                time05()
+                println("Weiter mit Enter")
+                readln()
+                spiel()
             }
             vorauswahl==6 -> {
                 "1-18"
                 println("Wähle einen Einsatz:")
-                var zahleEinsatz = readln().toDouble()
-                println("Gut, wähle jetzt die Zahl, auf die du setzen möchtest:")
-                var aufZahl = readln().toInt()
+                var einsBisAchtzehnEinsatz = readln().toDouble()
+                println("Gut, du hast dich für 1-18 entschieden und deinen Einsatz gemacht.:")
+
                 println("Starten mit Enter")
                 readln()
                 println("Dreht")
@@ -181,19 +213,233 @@ class Roulette {
                 println("Dreht")
                 time05()
                 println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
-                var gewinnEineZahl = zahleEinsatz * 35
+                var gewinnEinsBisAchtzehn = einsBisAchtzehnEinsatz * 2
+                if(rouletteRadZahl in (1..18)){
+                    kontostandAccount = kontostandAccount + gewinnEinsBisAchtzehn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnEinsBisAchtzehn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else {
+                    kontostandAccount = kontostandAccount - einsBisAchtzehnEinsatz
+                    println("Du hast leider verloren. Versuch es erneut.")
+                    time05()
+                    println("Dein aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
             }
             vorauswahl==7 -> {
                 "19-36"
+                println("Wähle einen Einsatz:")
+                var achtzehnBisSechsunddreissigEinsatz = readln().toDouble()
+                println("Gut, du hast dich für 1-18 entschieden und deinen Einsatz gemacht.:")
+
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
+                var gewinnachtzehnBisSechsunddreissigEinsatz = achtzehnBisSechsunddreissigEinsatz * 2
+                if(rouletteRadZahl in (19..36)){
+                    kontostandAccount = kontostandAccount + gewinnachtzehnBisSechsunddreissigEinsatz
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnachtzehnBisSechsunddreissigEinsatz€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else {
+                    kontostandAccount = kontostandAccount - achtzehnBisSechsunddreissigEinsatz
+                    println("Du hast leider verloren. Versuch es erneut.")
+                    time05()
+                    println("Dein aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
             }
             vorauswahl==8 -> {
                 "GERADE"
+                println("Wähle einen Einsatz:")
+                var geradeEinsatz = readln().toDouble()
+                println("Gut, du hast dich für GERADE entschieden und deinen Einsatz gemacht.:")
+
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
+                var gewinnGeradeEinsatz = geradeEinsatz * 2
+                if(rouletteRadZahl in (2..36 step 2)){
+                    kontostandAccount = kontostandAccount + gewinnGeradeEinsatz
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnGeradeEinsatz€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else {
+                    kontostandAccount = kontostandAccount - geradeEinsatz
+                    println("Du hast leider verloren. Versuch es erneut.")
+                    time05()
+                    println("Dein aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
             }
             vorauswahl==9 -> {
                 "UNGERADE"
+                println("Wähle einen Einsatz:")
+                var ungeradeEinsatz = readln().toDouble()
+                println("Gut, du hast dich für UNGERADE entschieden und deinen Einsatz gemacht.:")
+
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
+                var gewinnUngeradeEinsatz = ungeradeEinsatz * 2
+                if(rouletteRadZahl in (1..35 step 2)){
+                    kontostandAccount = kontostandAccount + gewinnUngeradeEinsatz
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnUngeradeEinsatz€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else {
+                    kontostandAccount = kontostandAccount - ungeradeEinsatz
+                    println("Du hast leider verloren. Versuch es erneut.")
+                    time05()
+                    println("Dein aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
             }
             vorauswahl==10 -> {
-                "NIEDRIGER HÖHER"
+                "column"
+                println("Wähle einen Einsatz:")
+                var columnEinsatz = readln().toDouble()
+                time05()
+                println("""
+                    Gut, nun entscheide dich für eine Reihe:
+                    1: Column 1 (Reihe 1)
+                    2: Column 2 (Reihe 2)
+                    3: Column 3 (Reihe 3)
+                """.trimMargin())
+                var column = readln().toInt()
+
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
+                var gewinnColumn = columnEinsatz * 4
+                if((rouletteRadZahl in (1..34 step 3)&&(column==1))){
+                    kontostandAccount = kontostandAccount + gewinnColumn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnColumn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if ((rouletteRadZahl in (2..35 step 3)&&(column==2))){
+                    kontostandAccount = kontostandAccount + gewinnColumn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnColumn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if ((rouletteRadZahl in (3..36 step 3)&&(column==3))){
+                    kontostandAccount = kontostandAccount + gewinnColumn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $gewinnColumn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }else {
+                    kontostandAccount = kontostandAccount - columnEinsatz
+                    println("Du hast leider verloren. Versuch es erneut.")
+                    time05()
+                    println("Dein aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
             }
             vorauswahl==11 -> {
                 rouletteMenue()
