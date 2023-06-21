@@ -8,6 +8,7 @@ class Roulette {
         return rouletteRadZahl
     }
 
+    var rouletteZuschauenZahl = rouletteRad.keys.random()
     fun spiel (){
         var rouletteRadZahl = rouletteRad.keys.random()
         println("Mache hier deine Einsätze")
@@ -171,11 +172,166 @@ class Roulette {
                 spiel()
             }
             vorauswahl==4 -> {
-                "DREI ZAHLEN"
+                println("Mache deinen Einsatz:")
+                var dreierEinsatz = readln().toInt()
+                println("Wähle deine 3er Reihe:")
+                time05()
                 println("""
-                    12 Kombinationen = 13 if else Anweisungen. Das sprengt
-                    den Rahmen des zeitlich Machbaren. Gern bei mehr Zeit.
+                    1:    1  2  3
+                    2:    4  5  6
+                    3:    7  8  9
+                    4:   10 11 12
+                    5:   13 14 15
+                    6:   16 17 18
+                    7:   19 20 21
+                    8:   22 23 24
+                    9:   25 26 27
+                    10:  28 29 30
+                    11:  31 32 33
+                    12:  34 35 36
                 """.trimIndent())
+                var dreierReihe = readln().toInt()
+                var dreierGewinn = dreierEinsatz * 11
+                if (rouletteRadZahl in (1..3)&&(dreierReihe==1)){
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (4..6)&&(dreierReihe==2)){
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (7..9)&&(dreierReihe==3)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (10..12)&&(dreierReihe==4)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (13..15)&&(dreierReihe==5)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (16..18)&&(dreierReihe==6)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (19..21)&&(dreierReihe==7)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (22..24)&&(dreierReihe==8)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (25..27)&&(dreierReihe==9)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (28..30)&&(dreierReihe==10)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (31..33)&&(dreierReihe==11)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else if (rouletteRadZahl in (34..36)&&(dreierReihe==12)) {
+                    kontostandAccount = kontostandAccount + dreierGewinn
+                    println("Herzlichen Glückwunsch sie haben gewonnen.")
+                    time05()
+                    println("Sie haben $dreierGewinn€ gewonnen.")
+                    time05()
+                    println("Ihr aktuelles Accountguthaben beträgt: $kontostandAccount€.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                } else {
+                    kontostandAccount = kontostandAccount - dreierEinsatz
+                    println("Du hast leider verloren. Viel Glück beim nächsten Mal.")
+                    time05()
+                    println("Weiter mit Enter")
+                    readln()
+                    spiel()
+                }
                 time05()
                 println("Weiter mit Enter")
                 readln()
@@ -475,6 +631,8 @@ class Roulette {
             }
             zwischenEingabe==2 -> {
                 "Zuschauen"
+                zuschauenRoulette()
+                zwischenMenueSpiel()
             }
             zwischenEingabe==3 -> {
                 "Abbrechen"
@@ -522,6 +680,24 @@ class Roulette {
         }
 
 
+    }
+
+    fun zuschauenRoulette(){
+        println("Starten mit Enter")
+        readln()
+        println("Dreht")
+        time05()
+        println("Dreht")
+        time05()
+        println("Dreht")
+        time05()
+        println("Dreht")
+        time05()
+        println("Dreht")
+        time05()
+        println("Dreht")
+        time05()
+        println("Und die Zahl ist :$rouletteZuschauenZahl und die Farbe ist: ${roulette[rouletteZuschauenZahl]}")
     }
 
 }
