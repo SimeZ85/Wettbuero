@@ -162,6 +162,26 @@ class Roulette {
             }
             vorauswahl==6 -> {
                 "1-18"
+                println("Wähle einen Einsatz:")
+                var zahleEinsatz = readln().toDouble()
+                println("Gut, wähle jetzt die Zahl, auf die du setzen möchtest:")
+                var aufZahl = readln().toInt()
+                println("Starten mit Enter")
+                readln()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Dreht")
+                time05()
+                println("Und die Zahl ist :$rouletteRadZahl und die Farbe ist: ${roulette[rouletteRadZahl]}")
+                var gewinnEineZahl = zahleEinsatz * 35
             }
             vorauswahl==7 -> {
                 "19-36"
