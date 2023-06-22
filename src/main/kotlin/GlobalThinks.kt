@@ -81,3 +81,9 @@ var m01 = simListDriver.random()
 
 var bankkontoGuthaben = 5000.0
 var kontostandAccount = 500.0
+
+val green = "\u001B[32m"
+val red = "\u001B[31m"
+val black = "\u001B[30m"
+val reset = "\u001B[0m"
+val white = "\u001B[47m"

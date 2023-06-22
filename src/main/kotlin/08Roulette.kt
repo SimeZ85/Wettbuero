@@ -37,12 +37,12 @@ class Roulette {
             11: Zurück zum Menü
             
             
-                3   6   9  12  15  18  21  24  27  30  33  36   <- Column 3
-            0   2   5   8  11  14  17  20  23  26  29  32  35   <- Column 2
-                1   4   7  10  13  16  19  22  25  28  31  34   <- Column 1
+          ${white}      ${red}3${reset}${white}   ${black}6${reset}${white}   ${red}9${reset}${white}  ${red}12${reset}${white}  ${black}15${reset}${white}  ${red}18${reset}${white}  ${red}21${reset}${white}  ${black}24${reset}${white}  ${red}27${reset}${white}  ${red}30${reset}${white}  ${black}33${reset}${white}  ${red}36${reset}   <- Column 3
+          ${white}  ${green}0${reset}${white}   ${black}2${reset}${white}   ${red}5${reset}${white}   ${black}8${reset}${white}  ${black}11${reset}${white}  ${red}14${reset}${white}  ${black}17${reset}${white}  ${black}20${reset}${white}  ${red}23${reset}${white}  ${black}26${reset}${white}  ${black}29${reset}${white}  ${red}32${reset}${white}  ${black}35${reset}   <- Column 2
+          ${white}      ${red}1${reset}${white}   ${black}4${reset}${white}   ${red}7${reset}${white}  ${black}10${reset}${white}  ${black}13${reset}${white}  ${red}16${reset}${white}  ${red}19${reset}${white}  ${black}22${reset}${white}  ${red}25${reset}${white}  ${black}28${reset}${white}  ${black}31${reset}${white}  ${red}34${reset}   <- Column 1
                 
-                1-18 Gerade       Rot Schwarz  Ungerade 19-36
-            
+          ${white}      ${black}1-18 Gerade${reset}${white}       ${red}Rot${reset}${white} ${black}Schwarz${reset}${white}  ${black}Ungerade 19-36${reset}
+           
         """.trimIndent())
         time05()
         println("Triff deine Auswahl:")
